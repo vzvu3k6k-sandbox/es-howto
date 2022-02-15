@@ -316,13 +316,13 @@ urlPrefix: https://tc39.es/ecma262/; spec: ECMA-262; for: ECMAScript
 
 Note: このテキストでは、"ECMAScript"という言葉は仕様書そのものを指すときだけに使い、他の場面では"JavaScript"という言葉を使うことにする。しかし、どちらも指しているのは同じものだ。（ECMAScriptとJavaScriptには歴史的な理由による違いがあるが、それはこのテキストでは扱わない。<a href="https://www.google.com/search?q=ecmascript+vs.+javascript">その違いはGoogleで検索</a>すれば簡単に分かるだろう。）
 
-## Why should I read the ECMAScript specification ## {#why-should-i-read-the-ecmascript-specification}
+## なんでECMAScriptの仕様を読むの？ ## {#why-should-i-read-the-ecmascript-specification}
 
-The ECMAScript specification is the authoritative source of the behavior of all JavaScript implementations, whether it be in your browser [[WHATISMYBROWSER]], on your server through Node.js [[NODEJS]], or on your IoT device [[JOHNNY-FIVE]]. All developers of JavaScript engines depend on the spec to make sure their shiny new feature works as intended, in the same way other JavaScript engines do.
+ECMAScriptの仕様はすべてのJavaScript処理系の動作を規定する公式の情報源だ。それがブラウザ[[WHATISMYBROWSER]]で動いていようと、サーバー上のNode.js[[NODEJS]]だろうと、IoTデバイス[[JOHNNY-FIVE]]だろうと、例外はない。どんなJavaScript処理系の開発者も、自分たちが実装したピカピカの新機能を意図通りに（つまり他の処理系と同じように）動作させるために仕様書を頼りにしている。
 
-But I claim that the utility of the spec extends beyond the mythical creatures known as "developers of JavaScript engines." In fact, I say that **it is useful to you, the average JavaScript coder, and you just haven't realized it.**
+だが、ここで言いたいのは、JavaScript処理系の開発者（と呼ばれる神話上の存在）以外にとっても仕様書は役に立つということだ。それどころか、**あなた（つまり普通のJavaScriptプログラマー）にとっても有用なのだ。まだそれに気付いていないだけで。**
 
-Suppose you discover the following peculiar juxtaposition at work one day
+たとえば、ある日の仕事中にこういう不可解な食い違いに出くわしたとしよう。
 
 ```js
 > Array.prototype.push(42)
