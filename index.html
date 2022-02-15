@@ -1489,7 +1489,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 2e3c4c68b, updated Fri Jan 14 14:49:00 2022 -0800" name="generator">
   <link href="https://timothygu.me/es-howto/" rel="canonical">
-  <meta content="87fed6b9b7855f3676a388d9b15a4152bfce1b03" name="document-revision">
+  <meta content="39031e7d82d95e2898929b05702f0256ff8d7cea" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -2086,16 +2086,16 @@ Parts of this work may be from another specification document.  If so, those par
   </div>
   <div class="p-summary" data-fill-with="abstract">
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>The ECMAScript Language specification (aka. the JavaScript specification, or ECMA-262) is a great resource for learning the intricacies of how JavaScript works. However, it is a huge text that can be confusing and intimidating at first. This document aims to make it easier to get started with reading the best JavaScript language reference available.</p>
+   <p>ECMAScript言語仕様書（ECMAScript Language specification、またの名をthe JavaScript specification、あるいはECMA-262）はJavaScriptの動作を詳しく知るための最良のドキュメントのひとつだ。しかし、途方もなく巨大な文書だから、最初は迷子になったり、圧倒されたりするかもしれない。このテキストのねらいは、その読み始めを手助けすることにある。</p>
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li>
-     <a href="#prelude"><span class="secno">1</span> <span class="content">Prelude</span></a>
+     <a href="#prelude"><span class="secno">1</span> <span class="content">はじめに</span></a>
      <ol class="toc">
-      <li><a href="#why-should-i-read-the-ecmascript-specification"><span class="secno">1.1</span> <span class="content">Why should I read the ECMAScript specification</span></a>
+      <li><a href="#why-should-i-read-the-ecmascript-specification"><span class="secno">1.1</span> <span class="content">なんでECMAScriptの仕様を読むの？</span></a>
       <li><a href="#what-belongs-to-the-ecmascript-specification"><span class="secno">1.2</span> <span class="content">What belongs to the ECMAScript specification, and what does not</span></a>
       <li><a href="#where-is-the-ecmascript-specification"><span class="secno">1.3</span> <span class="content">Before going any further, <em>where</em> is the ECMAScript specification?</span></a>
       <li><a href="#navigating-the-spec"><span class="secno">1.4</span> <span class="content">Navigating the spec</span></a>
@@ -2139,13 +2139,13 @@ Parts of this work may be from another specification document.  If so, those par
   </nav>
   <main>
    <div class="non-normative">
-    <h2 class="heading settled" data-level="1" id="prelude"><span class="secno">1. </span><span class="content">Prelude</span><a class="self-link" href="#prelude"></a></h2>
-    <p>So you’ve decided that reading a bit of ECMAScript spec each day is good for your health. Maybe it was a New Year’s resolution, or maybe it was just your doctor’s prescription. Whatever it is, welcome aboard!</p>
-    <p class="note" role="note"><span>Note:</span> In this document, I will only use the term "ECMAScript" to refer to the specification itself, and "JavaScript" anywhere else. However, both terms refer to the same thing. (There are some historical distinctions between ECMAScript and JavaScript, but discussing that is outside the scope of this document, and you can <a href="https://www.google.com/search?q=ecmascript+vs.+javascript">Google that distinction</a> very easily.)</p>
-    <h3 class="heading settled" data-level="1.1" id="why-should-i-read-the-ecmascript-specification"><span class="secno">1.1. </span><span class="content">Why should I read the ECMAScript specification</span><a class="self-link" href="#why-should-i-read-the-ecmascript-specification"></a></h3>
-    <p>The ECMAScript specification is the authoritative source of the behavior of all JavaScript implementations, whether it be in your browser <a data-link-type="biblio" href="#biblio-whatismybrowser">[WHATISMYBROWSER]</a>, on your server through Node.js <a data-link-type="biblio" href="#biblio-nodejs">[NODEJS]</a>, or on your IoT device <a data-link-type="biblio" href="#biblio-johnny-five">[JOHNNY-FIVE]</a>. All developers of JavaScript engines depend on the spec to make sure their shiny new feature works as intended, in the same way other JavaScript engines do.</p>
-    <p>But I claim that the utility of the spec extends beyond the mythical creatures known as "developers of JavaScript engines." In fact, I say that <strong>it is useful to you, the average JavaScript coder, and you just haven’t realized it.</strong></p>
-    <p>Suppose you discover the following peculiar juxtaposition at work one day</p>
+    <h2 class="heading settled" data-level="1" id="prelude"><span class="secno">1. </span><span class="content">はじめに</span><a class="self-link" href="#prelude"></a></h2>
+    <p>このテキストを読んでいるということは、あなたは健康のために毎日ECMAScriptを一口ずつ読んでいくことに決めたわけだ。それは新年の目標だろうか？　それともお医者さんにそう言われたからだろうか？　何はともあれ、ECMAScriptの世界にようこそ！</p>
+    <p class="note" role="note"><span>Note:</span> このテキストでは、"ECMAScript"という言葉は仕様書そのものを指すときだけに使い、他の場面では"JavaScript"という言葉を使うことにする。しかし、どちらも指しているのは同じものだ。（ECMAScriptとJavaScriptには歴史的な理由による違いがあるが、それはこのテキストでは扱わない。<a href="https://www.google.com/search?q=ecmascript+vs.+javascript">その違いはGoogleで検索</a>すれば簡単に分かるだろう。）</p>
+    <h3 class="heading settled" data-level="1.1" id="why-should-i-read-the-ecmascript-specification"><span class="secno">1.1. </span><span class="content">なんでECMAScriptの仕様を読むの？</span><a class="self-link" href="#why-should-i-read-the-ecmascript-specification"></a></h3>
+    <p>ECMAScriptの仕様はすべてのJavaScript処理系の動作を規定する公式の情報源だ。それがブラウザ<a data-link-type="biblio" href="#biblio-whatismybrowser">[WHATISMYBROWSER]</a>で動いていようと、サーバー上のNode.js<a data-link-type="biblio" href="#biblio-nodejs">[NODEJS]</a>だろうと、IoTデバイス<a data-link-type="biblio" href="#biblio-johnny-five">[JOHNNY-FIVE]</a>だろうと、例外はない。どんなJavaScript処理系の開発者も、自分たちが実装したピカピカの新機能を意図通りに（つまり他の処理系と同じように）動作させるために仕様書を頼りにしている。</p>
+    <p>だが、ここで言いたいのは、JavaScript処理系の開発者（と呼ばれる神話上の存在）以外にとっても仕様書は役に立つということだ。それどころか、<strong>あなた（つまり普通のJavaScriptプログラマー）にとっても有用なのだ。まだそれに気付いていないだけで。</strong></p>
+    <p>たとえば、ある日の仕事中にこういう不可解な食い違いに出くわしたとしよう。</p>
 <pre class="language-js highlight"><c- o>></c-> Array<c- p>.</c->prototype<c- p>.</c->push<c- p>(</c-><c- mf>42</c-><c- p>)</c->
 <c- mf>1</c->
 <c- o>></c-> Array<c- p>.</c->prototype
