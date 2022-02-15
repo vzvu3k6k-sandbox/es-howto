@@ -3,7 +3,8 @@ Title: How to Read the ECMAScript Specification
 Status: LD
 URL: https://timothygu.me/es-howto/
 Shortname: es-howto
-Editor: Timothy Gu, timothygu99@gmail.com, https://timothygu.me/
+Editor: (Original Author) Timothy Gu, timothygu99@gmail.com, https://timothygu.me/
+Editor: (Translator) vzvu3k6k, vzvu3k6k@gmail.com, https://github.com/vzvu3k6k
 Abstract: ECMAScript言語仕様書（ECMAScript Language specification、またの名をthe JavaScript specification、あるいはECMA-262）はJavaScriptの動作を詳しく知るための最良のドキュメントのひとつだ。しかし、途方もなく巨大な文書だから、最初は迷子になったり、圧倒されたりするかもしれない。このテキストのねらいは、その読み始めを手助けすることにある。
 Indent: 2
 Editor Term: Author, Authors
