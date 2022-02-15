@@ -310,11 +310,11 @@ urlPrefix: https://tc39.es/ecma262/; spec: ECMA-262; for: ECMAScript
 
 <div class=non-normative>
 
-# Prelude # {#prelude}
+# はじめに # {#prelude}
 
-So you've decided that reading a bit of ECMAScript spec each day is good for your health. Maybe it was a New Year's resolution, or maybe it was just your doctor's prescription. Whatever it is, welcome aboard!
+このテキストを読んでいるということは、あなたは健康のために毎日ECMAScriptを一口ずつ読んでいくことに決めたわけだ。それは新年の目標だろうか？　それともお医者さんにそう言われたからだろうか？　何はともあれ、ECMAScriptの世界にようこそ！
 
-Note: In this document, I will only use the term "ECMAScript" to refer to the specification itself, and "JavaScript" anywhere else. However, both terms refer to the same thing. (There are some historical distinctions between ECMAScript and JavaScript, but discussing that is outside the scope of this document, and you can <a href="https://www.google.com/search?q=ecmascript+vs.+javascript">Google that distinction</a> very easily.)
+Note: このテキストでは、"ECMAScript"という言葉は仕様書そのものを指すときだけに使い、他の場面では"JavaScript"という言葉を使うことにする。しかし、どちらも指しているのは同じものだ。（ECMAScriptとJavaScriptには歴史的な理由による違いがあるが、それはこのテキストでは扱わない。<a href="https://www.google.com/search?q=ecmascript+vs.+javascript">その違いはGoogleで検索</a>すれば簡単に分かるだろう。）
 
 ## Why should I read the ECMAScript specification ## {#why-should-i-read-the-ecmascript-specification}
 
